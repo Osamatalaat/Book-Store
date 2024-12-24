@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    
+    /* background-image: url(./images/lib2.jpg); */
+
+    
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F0F0F0;  /* Light gray track */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;  /* Soft blue thumb */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: black;  /* Darker blue on hover */
+}
+
+::-webkit-scrollbar-horizontal {
+    height: 8px;
+}
+
+.container {
+    background-color: transparent;
+    
+    
+
+}
+
+
+.container .first-top-nav{
+   
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    
+}
+
+
+i{
+    color: white;
+    cursor: pointer;
+}
+
+
+.container .first-top-nav .icons button {
+    background-color: black;
+    border: none;
+}
+
+
+.container .first-top-nav .icons{
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+
+
+/* second top nav bar  */
+.second-top-nav-container{
+    background-color: white;
+    box-sizing: content-box;
+}
+
+.second-top-nav{
+    width: 80%;
+    margin: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: capitalize;
+
+   
+    color: black;
+    
+    
+}
+
+
+.second-top-nav .logo-and-title{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+
+
+.second-top-nav .logo img{
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    padding-right: 10px;
+}
+
+
+
+
+.second-top-nav .logo-title h2{
+    font-weight: 500;
+}
+
+
+
+.second-top-nav .logo-title span {
+    font-size: 10px;
+    color: #636363;
+}
+
+
+
+ /* phone icon & email address   */
+
+
+.second-top-nav .phone-email {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+
+}
+.second-top-nav .phone-email .email{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 170px;
+}
+.second-top-nav .phone-email .email .email-icon{
+    padding-right: 15px;
+}
+
+
+.second-top-nav .phone-email .phone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 170px;
+}
+
+
+
+
+
+
+
+
+
+.second-top-nav .phone-email  i{
+color :  #007BFF;
+font-size: 30px;
+
+}
+
+
+.second-top-nav .phone-email  span{
+    color: #636363;
+    font-size: 10px;
+
+}
+
+
+.second-top-nav .phone-email  h3{
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+.second-top-nav .phone-email .hr{
+
+    background-color: #D3D3D3;
+    height: 30px;
+}
+
+
+
+     /* third top navigation part  */
+
+
+.third-top-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.third-top-nav button{
+    width: 150px;
+    height: 45px;
+    background-color: #007BFF;
+    border: .5px solid #D3D3D3;
+    
+}
+
+.third-top-nav button:hover{
+background-color: black;
+}
+
+
+.third-top-nav a {
+    color: white;
+    text-decoration: none ;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+.third-top-nav #home{
+    background-color: black;
+}
+.third-top-nav #home:hover{
+    background-color: #007BFF;
+}
+
+
+.third-top-nav #quote{
+    background-color: black;
+}
+.third-top-nav #quote:hover{
+    background-color: #007BFF;
+}
+
+/* end third section from navigation  */
+
+/* center section start  */
+.container-center{
+   
+    height: 100vh;
+
+    color: white;
+    background: linear-gradient(to top, rgba(7, 23, 247, 0.3), rgba(122, 75, 75, 0.3)), url(./images/lib2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.container-center section{
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-center .left-section p{
+    font-size: 35px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.container-center .left-section p span{
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    color: #ff2600;
+    padding-bottom: 20px;
+}
+
+
+.container-center .right-section{
+    width: 600px;
+    height: 500px;
+    padding: 35px;
+    background-color: rgba(0, 0, 0, 0.466);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-center .right-section h2{
+text-transform:capitalize;
+font-size: 30px;
+font-weight: 500;
+color: #007BFF;
+margin-bottom: 20px;
+}
+
+
+.container-center .right-section p span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-center .right-section input{
+    width: 300px;
+    height: 45px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+
+.container-center .right-section #message {
+    height: 80px;
+    
+}
+#message::placeholder {
+    position: relative;
+     top: -20px; /*place holder in the top */
+}
+
+
+.container-center .right-section button{
+    width: 180px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: #007BFF;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}

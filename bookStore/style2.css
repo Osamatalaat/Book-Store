@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", serif;
+}
+
+body {
+    margin: 20px;
+    /* Warm off-white background */
+    background-color: #d4ebf896;
+}
+
+/* scroll  */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F0F0F0;  /* Light gray track */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6D9DC5;  /* Soft blue thumb */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #517D98;  /* Darker blue on hover */
+}
+
+::-webkit-scrollbar-horizontal {
+    height: 8px;
+}
+.dropdown{
+    background-color: #000000;
+
+}
+
+
+
+.dropdown ul {
+    list-style-type: none;
+    padding: 200px;
+    margin: 100px;
+
+}
+
+.dropdown li {
+    background-color: #E4F1F4;  /* Soft teal background */
+    padding: 10px;
+    border: 1px solid #CCE3E9;  /* Light border */
+    cursor: pointer;
+}
+.dropdown #cat {
+    background-color: #2E5077;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dropdown ul .lists:hover {
+    background-color: #7AC5B7;  /* Lighter teal on hover */
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 0 0 20px 20px;
+    padding-left: 30px;
+}
+
+#container div {
+    margin: 10px;
+    width: 450px;
+    height: 450px;
+    border-radius: 20px;
+    background-color: #158cd600;  /* Light teal background */
+    text-align: center;
+    position: relative;
+}
+
+#container div p,
+h3 {
+    margin: 20px;
+}
+
+#container div img {
+    padding: 20px;
+    border-radius: 30px;
+}
+
+/* .container-buttons {
+    background-color: #FAF4F0;
+} */
+
+#container div button {
+    width: 80%;
+    height: 50px;
+    padding: 10px;
+    background-color: #fc5c0c;  /* Soft teal */
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(247, 245, 245);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#container div button:hover {
+    cursor: pointer;
+    background-color: #4335A7;  /* Darker teal */
+}
+
+.navbar {
+    background-color: #2E5077;  /* Rich teal background */
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    
+    position: relative;
+}
+
+.logo {
+    height: 80px;
+    object-fit: contain;
+    left: 20px;
+}
+
+.icon {
+    background: #E4F1F4;  /* Soft teal background */
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 28px;
+    height: 30px;
+    width: 600px;
+}
+
+.icon button {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.icon i {
+    height: 13px;
+    width: 25px;
+    margin-right: 7px;
+}
+
+.icon input {
+    border: none;
+    margin-left: 10px;
+    font-family: 'Lexend', sans-serif;
+    font-size: 20px;
+    color: #333333;
+    outline: none;
+    background: transparent;
+}
+
+.icon input::placeholder,
+.icon i {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.rightSide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rightSide img {
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.rightSide button {
+    background: transparent;
+    border-radius: 10px;
+    border: none;
+    font-size: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.container-footer {
+    background-color: #2E5077;
+    /* background-color: #1F509A; */
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 0 10px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.footer .left-side {
+    width: 40%;
+}
+
+.footer .top {
+    margin-bottom: 20px;
+}
+
+.footer .top h1 {
+    margin-bottom: 5px;
+}
+
+.footer .input-box {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.footer .input-box .input-email,
+.input-birthday {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.footer .input-box .input-birthday {
+    margin-left: 20px;
+}
+
+.footer .input-box label {
+    margin-bottom: 5px;
+}
+
+.footer .input-box input {
+    padding: 10px;
+    width: 350px;
+    height: 50px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+}
+
+.footer .input-box .input-birthday input {
+    width: 240px;
+}
+
+.footer .semi-end button {
+    width: 620px;
+    height: 50px;
+    border: 4px solid #2C6E8F;  /* Matching navbar color */
+    background: transparent;
+    font-weight: bold;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.footer .semi-end p {
+    margin-bottom: 10px;
+    width: 620px;
+}
+
+.footer .semi-end p span {
+    text-decoration: underline;
+    text-decoration-color: #2C6E8F;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.icons-end {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.icons-end button {
+    background-color: #E4F1F4;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.footer .left-side{
+    color: white;
+}
+
+.icons-end button i {
+    font-size: 20px;
+    color: #333;
+}
+
+.icons-end button:hover {
+    background-color: #FF7F3E;  /* Matching navbar color */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.icons-end button:hover i {
+    color: #fff;
+}
+
+#instegram i {
+    color: #E1306C;
+}
+
+#facabook i {
+    color: #4267B2;
+}
+
+#twitter i {
+    color: #1DA1F2;
+}
+
+#X i {
+    color: #000000;
+}
+
+#youtube i {
+    color: #FF0000;
+}
+
+#pinterest i {
+    color: #E60023;
+}
+
+.right-side {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #F0F8FF;  /* Very light blue background */
+    border-radius: 10px;
+}
+
+.right-side>div {
+    flex: 1;
+    padding: 10px;
+    max-width: 300px;
+}
+
+.right-side span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.right-side ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right-side li {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.right-side li:hover {
+    color: #2C6E8F;  /* Matching navbar color */
+    text-decoration: underline;
+}
+
+.end-page a {
+    text-decoration: none;
+}
+
+/* new css */
+/* Style the dropdown container */
+#dropdownMenu {
+    display: block;
+    position: absolute; /* Fixed position to make it stay on the viewport */
+    top: 0; /* Start at the top */
+    right: 0; /* Align to the right edge */
+    height: 100vh; /* Full height of the viewport */
+    background-color: #fff; /* Background color */
+    border-left: 1px solid #ccc; /* Optional border to separate it from the page */
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    padding: 20px; /* Add padding inside */
+    display: none; /* Initially hidden */
+    z-index: 1000; /* Ensures it appears above other elements */
+    width: 250px; /* Adjust width as needed */
+    overflow-y: auto; /* Enable scrolling if the content overflows */
+    margin-top: 170px;
+    margin-right: 20px;
+    /* transition: all .9s; */
+    border-radius: 20px 0 0 20px ;
+    transition: 2s;
+}
+
+#dropdownMenu.active {
+    transform: translateX(0.5s); /* Slide in to the viewport */
+}
+
+/* Style the dropdown list items */
+#dropdownMenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#dropdownMenu li {
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-align: left; /* Align text inside the menu */
+}
+
+#dropdownMenu li:hover {
+    background-color: #f0f0f0; /* Highlight effect on hover */
+}
+
+
+.container-end-page .end-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    padding: 20px;
+}
+.container-end-page .end-page a{
+    color: white;
+}
+.container-end-page .back-to-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container-end-page{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    
+}
+
+.final{
+    padding: 20px;
+}

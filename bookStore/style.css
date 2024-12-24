@@ -1,0 +1,647 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 20px;
+    background-color: #FAF4F0;
+
+}
+
+/* scroll  */
+
+/* Style the scrollbar track (background) */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Width of the scrollbar */
+}
+
+/* Style the track (empty space of scrollbar) */
+::-webkit-scrollbar-track {
+    background: #F0F0F0;
+    /* Light gray background */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: #6D9DC5;
+    /* Gray color */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+/* Style the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #517D98;
+    /* Darker gray on hover */
+}
+
+/* Optional: Style the scrollbar for horizontal scrolling */
+::-webkit-scrollbar-horizontal {
+    height: 8px;
+    /* Height of the horizontal scrollbar */
+}
+
+
+/* Basic styles for the dropdown */
+.dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown li {
+    background-color: #E4F1F4;
+    padding: 10px;
+    border: 1px solid #CCE3E9;;
+    cursor: pointer;
+}
+
+.dropdown li:hover {
+    background-color: #7AC5B7;
+}
+
+/* scloll  */
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    /* justify-content: space-evenly; */
+    /* background-color:#FAF8F1 ; */
+    border-radius: 0 0 20px 20px;
+
+    padding-left: 30px;
+}
+
+#container div {
+
+
+    margin: 10px;
+    width: 450px;
+    height: 450px;
+    border-radius: 20px;
+    background-color: #E4F1F4;
+    text-align: center;
+    position: relative;
+
+
+}
+
+/* #container div:hover{
+
+    width: 400px;
+    height: 600px;
+    transition: 1.5s;
+
+} */
+
+
+#container div p,
+h3 {
+
+    margin: 20px;
+
+}
+
+#container div img {
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.container-buttons {
+    background-color: #FAF4F0;
+}
+
+#container div button {
+    width: 80%;
+    height: 50px;
+    padding: 10px;
+    background-color: #7AC5B7;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(247, 245, 245);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: .5s;
+
+}
+
+#container div button:hover {
+    cursor: pointer;
+
+    background-color: #5FB59E;
+    /* color: red; */
+
+}
+
+
+.navbar {
+    background-color: #2C6E8F;
+
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+}
+
+.logo {
+    /* width: 200px; */
+    height: 80px;
+    object-fit: contain;
+    /* position: absolute; */
+    left: 20px;
+
+}
+
+.icon {
+
+    background: #E4F1F4;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 28px;
+    height: 30px;
+    width: 600px;
+
+
+
+}
+
+.icon button {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+
+}
+
+.icon i {
+    height: 13px;
+    width: 25px;
+    margin-right: 7px;
+
+}
+
+.icon input {
+
+    border: none;
+
+    margin-left: 10px;
+    font-family: 'Lexend', sans-serif;
+    font-size: 20px;
+    color: #333333;
+    outline: none;
+    /* Remove blue outline on focus */
+    background: transparent;
+
+}
+
+.icon input::placeholder,
+.icon i {
+
+    color: rgb(0, 0, 0, 0.5);
+
+}
+
+/* select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select:focus {
+    outline: none;
+    border-color: #007BFF; /* Highlight the border on focus */
+/* } */
+.rightSide {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rightSide img {
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 30px;
+
+}
+
+.rightSide button {
+    background: transparent;
+
+    border-radius: 10px;
+    border: none;
+    font-size: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+
+}
+
+
+.container-footer {
+    background-color: #2C6E8F;
+}
+
+
+.container-buttons button {
+    width: 100px;
+    height: 50px;
+    background-color: #e4cdb1;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.container-buttons button {
+    width: 150px;
+    height: 50px;
+    background-color: #e4cdb1;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.container-buttons button:hover {
+    background-color: #FAEAB1;
+    /* color: red; */
+    box-shadow: 0 10px #dfcb80;
+    font-weight: bold;
+}
+
+
+/* foooooooooooter */
+.container-footer {
+    background-color: #C58940;
+}
+
+.footer {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin: 10px 10px 0 10px;
+
+    padding: 30px;
+    box-sizing: border-box;
+
+
+
+}
+
+.footer .left-side {
+    width: 40%;
+}
+
+.footer .top {
+    margin-bottom: 20px;
+}
+
+.footer .top h1 {
+    margin-bottom: 5px;
+}
+
+
+.footer .input-box {
+    width: 30%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.footer .input-box .input-email,
+.input-birthday {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+
+    /* gap: 10px; */
+    /* margin: 20px; */
+
+}
+
+.footer .input-box .input-birthday {
+    margin-left: 20px;
+
+}
+
+.footer .input-box label {
+    margin-bottom: 5px;
+}
+
+.footer .input-box input {
+    padding: 10px;
+    width: 350px;
+    height: 50px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: none;
+    outline: none
+}
+
+.footer .input-box .input-birthday input {
+    width: 240px;
+}
+
+.footer .semi-end button {
+    width: 620px;
+    height: 50px;
+    border: 4px solid black;
+    background: transparent;
+    font-weight: bold;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.footer .semi-end p {
+    margin-bottom: 10px;
+    width: 620px;
+}
+
+.footer .semi-end p span {
+    text-decoration: underline;
+    /* Adds underline to the text */
+    text-decoration-color: black;
+    /* Optional: Customize underline color */
+    text-decoration-thickness: 2px;
+    /* Optional: Set the thickness of the underline */
+    text-underline-offset: 3px;
+}
+
+
+/*  */
+
+/* Style for the icons container */
+.icons-end {
+    display: flex;
+    /*Arrange icons in a row */
+    justify-content: flex-start;
+    /* Center icons horizontally */
+    align-items: center;
+    /* Center icons vertically */
+    gap: 15px;
+    /*Add space between buttons */
+    margin-top: 20px;
+    /* Optional: Adjust spacing above the container */
+}
+
+/* Style for each button */
+.icons-end button {
+    background-color: #E4F1F4;
+    /* Light background color */
+    border: none;
+    /* Remove default border */
+    border-radius: 50%;
+    /* Make buttons circular */
+    padding: 10px;
+    /* Adjust button size */
+    width: 50px;
+    /* Fixed width */
+    height: 50px;
+    /* Fixed height */
+    display: flex;
+    /* Center align the icon */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add subtle shadow */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: all 0.3s ease;
+    /* Smooth hover effect */
+}
+
+/* Icon style */
+.icons-end button i {
+    font-size: 20px;
+    /* Adjust icon size */
+    color: #333;
+    /* Default icon color */
+}
+
+/* Hover effect */
+.icons-end button:hover {
+    background-color: #2C6E8F;
+    /* Change background color on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    /* Add a stronger shadow */
+}
+
+.icons-end button:hover i {
+    color: #fff;
+    /* Change icon color on hover */
+}
+
+/* Specific styles for individual buttons (optional) */
+#instegram i {
+    color: #E1306C;
+    /* Instagram color */
+}
+
+#facabook i {
+    color: #4267B2;
+    /* Facebook color */
+}
+
+#twitter i {
+    color: #1DA1F2;
+    /* Twitter color */
+}
+
+#X i {
+    color: #000000;
+    /* X (Twitter) color */
+}
+
+#youtube i {
+    color: #FF0000;
+    /* YouTube color */
+}
+
+#pinterest i {
+    color: #E60023;
+    /* Pinterest color */
+}
+
+
+
+
+/* footer right side  */
+li {
+    list-style: none;
+}
+
+/* Right-side container styling */
+.right-side {
+    display: flex;
+    /* Arrange sections horizontally */
+    justify-content: space-around;
+    /* Space out the sections evenly */
+    align-items: flex-start;
+    /* Align items at the top */
+    margin-top: 20px;
+    /* Add space above the container */
+    padding: 20px;
+    /* Optional: Add padding inside the container */
+    background-color: #F0F8FF;
+    /* Light background color */
+    border-radius: 10px;
+    /* Optional: Round the corners */
+}
+
+/* Individual section styling */
+.right-side>div {
+    flex: 1;
+    /* Ensure each section takes equal width */
+    padding: 10px;
+    /* Add spacing inside each section */
+    max-width: 300px;
+    /* Limit the width of each section */
+}
+
+/* Styling for the <span> headings */
+.right-side span {
+    display: block;
+    /* Ensure it takes the full width */
+    font-size: 18px;
+    /* Set font size */
+    font-weight: bold;
+    /* Make it bold */
+    color: #333;
+    /* Dark text color */
+    margin-bottom: 10px;
+    /* Space between heading and list */
+    text-transform: uppercase;
+    /* Optional: Make text uppercase */
+}
+
+/* Styling for the <ul> and <li> */
+.right-side ul {
+    list-style: none;
+    /* Remove bullet points */
+    padding: 0;
+    /* Remove default padding */
+}
+
+.right-side li {
+    margin: 8px 0;
+    /* Add space between list items */
+    font-size: 16px;
+    /* Set font size */
+    color: #555;
+    /* Set text color */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    transition: all 0.3s ease;
+    /* Smooth hover effect */
+}
+
+/* Hover effect for <li> */
+.right-side li:hover {
+    color: #2C6E8F;
+    /* Change text color on hover */
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .right-side {
+        flex-direction: column;
+        /* Stack sections vertically */
+        align-items: center;
+        /* Center-align the sections */
+    }
+
+    .right-side>div {
+        max-width: 100%;
+        /* Allow full width */
+        text-align: center;
+        /* Center the content */
+    }
+}
+
+
+
+
+/* footer in the end page  */
+
+.end-page {
+    display: flex;
+    /* Arrange items in a row */
+    /* justify-content: ; */
+    /* Center the links horizontally */
+    align-items: center;
+    gap: 20px;
+    /* Add spacing between the links */
+    margin-top: 20px;
+    /* Add some space above the links */
+    flex-wrap: wrap;
+    /* Ensure links wrap to the next line if necessary (optional for responsiveness) */
+    margin: 20px;
+
+}
+
+.end-page a {
+    text-decoration: none;
+    /* Remove underline from links */
+    font-size: 14px;
+    /* Adjust font size */
+    color: #333;
+    /* Set link color */
+    font-weight: bold;
+    /* Make text bold */
+    transition: color 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.end-page a:hover {
+    color: #007BFF;
+    /* Change color on hover */
+}
+
+.container-end-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-end-page .back-to-top {
+    display: flex;
+    margin-right: 20px;
+
+}
+
+.final {
+    padding: 20px;
+
+    text-align: center;
+}
+
+a {
+    color: #000000;
+}
